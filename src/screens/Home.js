@@ -62,7 +62,7 @@ export default function Home() {
             </div>
             <div className="carousel-item active">
               <img
-                src="https://source.unsplash.com/random/900×700/?burger"
+                src="https://labetno.ufpa.br/images/galeria_em_artigos/image03_grd.png"
                 className="d-block w-100"
                 alt="..."
                 style={{ filter: "brightness(30%)" }}
@@ -70,7 +70,7 @@ export default function Home() {
             </div>
             <div className="carousel-item">
               <img
-                src="https://source.unsplash.com/random/900×700/?barbeque"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4M7nZjgoZAoxHYQi_kKvCnWceK3LWl92uXQ&s"
                 className="d-block w-100"
                 alt="..."
                 style={{ filter: "brightness(30%)" }}
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
             <div className="carousel-item">
               <img
-                src="https://source.unsplash.com/random/900×700/?cakes"
+                src="https://cdn.pixabay.com/photo/2012/02/24/16/59/swan-16736_1280.jpg"
                 className="d-block w-100"
                 alt="..."
                 style={{ filter: "brightness(30%)" }}
