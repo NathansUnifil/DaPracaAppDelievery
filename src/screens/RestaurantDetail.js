@@ -4,12 +4,12 @@ import Modal from "../Modal";
 
 const RESTAURANTS_DATA = {
   "1": {
-    name: "Restaurante X",
-    status: "Aberto",
+    name: "DA PRAÇA RESTAURANTE",
+    status: "Aberto", // TODO: TUDO DINAMICO CARALHO
     waitTime: "Entrega X mins",
     categories: [
       {
-        name: "Lista 1",
+        name: "PASTÉIS SALGADOS GRANDES (22cm)",
         items: [
           {
             name: "Item Exemplo",
@@ -53,9 +53,745 @@ const RESTAURANTS_DATA = {
               },
             ],
           },
+          {
+            name: "Vento",
+            description: "Subtexto",
+            price: "9,00",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Carne",
+            description: "Subtexto",
+            price: "17,50",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Queijo",
+            description: "Subtexto",
+            price: "17,50",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Frango",
+            description: "Subtexto",
+            price: "17,50",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Palmito",
+            description: "Subtexto",
+            price: "19,00",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Palmito com Queijo",
+            description: "Subtexto",
+            price: "22,00",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Carne e Azeitona",
+            description: "Subtexto",
+            price: "19,50",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Carne e Queijo",
+            description: "Subtexto",
+            price: "XX,XX",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Frango e Bacon",
+            description: "Subtexto",
+            price: "XX,XX",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Pizza",
+            description: "Subtexto",
+            price: "XX,XX",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Frango com Catupiry",
+            description: "Subtexto",
+            price: "XX,XX",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Carne seca com Catupiry",
+            description: "Subtexto",
+            price: "XX,XX",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Tomate Seco, Rucula e Queijo",
+            description: "Subtexto",
+            price: "XX,XX",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Costela Desfiada com Queijo",
+            description: "Subtexto",
+            price: "XX,XX",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Carne Seca, Queijo e Jalapeña",
+            description: "Subtexto",
+            price: "XX,XX",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          {
+            name: "Especial de 25cm",
+            description: "peito de frango desfiado ou carne + queijo + bacon + berbecue + pimenta jalapeña",
+            price: "XX,XX",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
           // outros itens podem não ter details senão da bug, olha isso depois.
           // TODO: Resto das listas. garbage code. fazer isso dinamico (de alguma forma. Eles vão precisar de uma tela admin para adicionar novos itemns no cardapio affff)
-          { name: "Item texto", description: "Subtexto", price: "XX,XX" },
+          
+        ],
+      },
+      {
+        name: "PORÇÕES MINI PASTÉIS SALGADOS",
+        items: [
+          {
+            name: "Mini Porção Pastel Salgado",
+            description: "10 unidades com +- 8cm cada.",
+            price: "36,00",
+            details: [
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
+                  { name: "Texto opção", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                  { name: "Texto opção" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: true,
+                options: [
+                  { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
+                ],
+              },
+              {
+                title: "Texto",
+                required: false,
+                options: [
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subtxt", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                  { name: "Texto opção", subtext: "subttext", price: "XX,XX" },
+                ],
+              },
+            ],
+          },
+          { name: "Mini Porção Pastel Costelada Desfiada", description: "10 unidades com +- 8cm cada.", price: "42,00" },
+          { name: "Mini Porção Pastel Carne Seca", description: "10 unidades com +- 8cm cada.", price: "42,00" },
+        ],
+      },
+      {
+        name: "PORÇÕES MINI PASTÉIS DOCE",
+        items: [
+          { name: "Item texto", description: "Subtexto", price: "8,00" },
+          { name: "Item texto", description: "Subtexto", price: "11,00" },
+        ],
+      },
+      {
+        name: "PASTÉIS DOCE GRANDE (22cm)",
+        items: [
+          { name: "Item texto", description: "Subtexto", price: "5,50" },
+          { name: "Item texto", description: "Subtexto", price: "9,90" },
+          { name: "Item texto", description: "Subtexto", price: "13,00" },
         ],
       },
     ],
