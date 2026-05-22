@@ -7,8 +7,7 @@ Esse projeto é para o app de Delievery do da Praça.
 - [Requisitos](#requisitos)
   - [Prérequisitos](#Prerequisitos)
   - [Installation](#installation)
-- [Available Scripts](#available-scripts)
-- [Running Tests](#running-tests)
+- [Scripts](#scripts)
 - [Deployment](#deployment)
 
 ## Requisitos
@@ -30,7 +29,7 @@ Tenha já instalado esses pacotes em seu computador:
    cd DaPracaAppDelievery
 3. npm install
 
-## Scripts
+### Scripts
 
 na pasta principal do projeto, usa o comando:
 
@@ -50,7 +49,6 @@ Você também pode ver qualquer erro no console.
 ### `npm test`
 
 Esse comando inicia o aplicativo no modo de stress test.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -58,8 +56,6 @@ Compila o aplicativo para produção na pasta `build`.\
 O comando agrupa corretamente o React e o app em modo de produção e otimiza a compilação para obter o melhor desempenho.
 
 A versão compilada está minificada e os nomes dos arquivos incluem os hashes.
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
