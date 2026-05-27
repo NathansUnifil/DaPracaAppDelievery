@@ -28,7 +28,7 @@ Enquanto não necessário, tenha também esse pacote já instalado para convenci
 
 ## Scripts
 
-na pasta principal do projeto, usa o comando:
+[//]: # (todo: colocar o relátorio final quando eu terminal aqui no readme)
 
 ### npm start
 
