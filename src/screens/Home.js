@@ -12,27 +12,33 @@ export default function Home() {
     const dummyData = [
       {
         _id: "1",
-        name: "Restaurante 1",
-        description: "O que o restaurante é aqui",
-        rating: 'x', // todo: Tem que ser dinamico, não estático. fazer isso depois.
+        name: "DA PRAÇA RESTAURANTE",
+        description: "Lanches, Comida.",
+        rating: '5.0', // todo: Tem que ser dinamico, não estático. fazer isso depois.
       },
       {
         _id: "2",
-        name: "Restaurante 2",
-        description: "O que o restaurante é aqui",
-        rating: 'x',
+        name: "CORDERO ESPETARIA E CHOPPERIA",
+        description: "Carnes, Churrasco, Cerveja.",
+        rating: '5.0',
       },
       {
         _id: "3",
-        name: "Restaurante 3",
-        description: "O que o restaurante é aqui",
-        rating: 'x',
+        name: "MIYABI COMIDA JAPONESA",
+        description: "Comida Japonesa.",
+        rating: '5.0',
       },
       {
         _id: "4",
-        name: "Restaurante 4",
-        description: "O que o restaurante é aqui",
-        rating: 'x',
+        name: "SEM CAÔ HAMBURGUERIA E CREPERIA",
+        description: "Hamburguers e Crepês.",
+        rating: '5.0',
+      },
+      {
+        _id: "5",
+        name: "ALINE AÇAÍ, SOBREMESAS E MARMITAS FIT",
+        description: "Doces, Açaí e Marmitas.",
+        rating: '5.0',
       },
     ];
     setRestaurants(dummyData);
