@@ -5,8 +5,6 @@ const mongoDB = async () => {
   try {
     const connect = await mongoose.connect(mongoURI);
 
-
-
     if (connect) {
       console.log("Connection Successful");
       const fetched_data = mongoose.connection.db.collection("food_items");

@@ -1,63 +1,42 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom"; 
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Cards from "../components/Cards";
 
 export default function Home() {
   const [search, setSearch] = useState("");
   const [restaurants, setRestaurants] = useState([]);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
+  const fetchRestaurants = async () => {
+    try {
+      const res = await fetch("http://localhost:5000/api/allRestaurants", {
+        method: "GET",
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await res.json();
+      if (data.success && data.restaurants) {
+        setRestaurants(data.restaurants);
+      }
+    } catch (error) {
+      console.error("Erro ao buscar restaurantes:", error);
+    }
+  };
 
   useEffect(() => {
-    const dummyData = [
-      {
-        _id: "1",
-        name: "DA PRAÇA RESTAURANTE",
-        description: "Lanches, Comida.",
-        rating: '5.0', // todo: Tem que ser dinamico, não estático. fazer isso depois.
-      },
-      {
-        _id: "2",
-        name: "CORDERO ESPETARIA E CHOPPERIA",
-        description: "Carnes, Churrasco, Cerveja.",
-        rating: '5.0',
-      },
-      {
-        _id: "3",
-        name: "MIYABI COMIDA JAPONESA",
-        description: "Comida Japonesa.",
-        rating: '5.0',
-      },
-      {
-        _id: "4",
-        name: "SEM CAÔ HAMBURGUERIA E CREPERIA",
-        description: "Hamburguers e Crepês.",
-        rating: '5.0',
-      },
-      {
-        _id: "5",
-        name: "ALINE AÇAÍ, SOBREMESAS E MARMITAS FIT",
-        description: "Doces, Açaí e Marmitas.",
-        rating: '5.0',
-      },
-    ];
-    setRestaurants(dummyData);
+    fetchRestaurants();
   }, []);
 
   const filteredRestaurants = restaurants.filter((r) =>
     r.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  // navega para a tela de detalhes do restaurante clicado. Só funciona com o restaurante 1 pq tá ruim. pelo menos os ids estão funcionandos. 
-  // TODO: IDS de restaurantes
   const handleRestaurantClick = (id) => {
     navigate(`/restaurant/${id}`);
   };
 
   return (
     <div className="d-flex flex-column min-vh-100">
-      {/* cabeçalho com busca e localização */}
-      {/* bugado por enquanto. TODO: termina isso. */}
+      {/* Cabeçalho com busca e localização */}
       <div className="bg-light p-3 shadow-sm">
         <div className="container">
           <input
@@ -74,7 +53,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* lista de restaurantes */}
+
+      {/* Lista de restaurantes */}
       <div className="container flex-grow-1 mt-3">
         {filteredRestaurants.length > 0 ? (
           <ul className="list-group list-group-flush">
@@ -87,10 +67,9 @@ export default function Home() {
               >
                 <div>
                   <h5 className="mb-1">{rest.name}</h5>
-                  <p className="mb-1 text-muted">{rest.description}</p>
-                  <small className="text-warning">
-                    {"●".repeat(Math.floor(rest.rating))} {rest.rating}
-                  </small>
+                  <p className="mb-1 text-muted">
+                    {rest.status === "Aberto" ? "Aberto" : "Fechado"} &bull; {rest.waitTime}
+                  </p>
                 </div>
               </li>
             ))}
@@ -99,6 +78,8 @@ export default function Home() {
           <div className="text-center mt-5">Nenhum restaurante encontrado</div>
         )}
       </div>
+
+      {/* Rodapé */}
       <footer className="bg-white border-top py-2 mt-auto">
         <div className="container">
           <div className="row text-center">

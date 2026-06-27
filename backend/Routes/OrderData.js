@@ -47,4 +47,13 @@ router.post("/myOrderData", async (req, res) => {
     res.send("Erro do servidor", error.message);
   }
 });
+router.get("/allOrderData", async (req, res) => {
+  try {
+    const allOrders = await Order.find({});
+    res.json({ success: true, orders: allOrders });
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).send("Erro do servidor");
+  }
+});
 module.exports = router;

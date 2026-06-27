@@ -65,4 +65,15 @@ router.post("/loginuser", async (req, res) => {
   }
 });
 
+router.get("/allUsers", async (req, res) => {
+  try {
+    const users = await User.find({}, { password: 0 });
+    res.json({ success: true, users });
+  } catch (error) {
+    console.log(error.message);
+    res.status(500).send("Erro do servidor");
+  }
+});
+
+
 module.exports = router;

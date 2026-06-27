@@ -1,5 +1,5 @@
 export const RESTAURANTS_DATA = {
-  "1": {
+  "6a3d839dc18c0e3ce3a51fd0": {
     name: "DA PRAÇA RESTAURANTE",
     status: "Aberto", // TODO: TUDO DINAMICO CARALHO
     waitTime: "Entrega X mins",
@@ -14,7 +14,7 @@ export const RESTAURANTS_DATA = {
             details: [
               {
                 title: "Texto",
-                required: true,
+                required: false,
                 options: [
                   { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
                   { name: "Texto opção", price: "XX,XX" },
@@ -32,7 +32,7 @@ export const RESTAURANTS_DATA = {
               },
               {
                 title: "Texto",
-                required: true,
+                required: false,
                 options: [
                   { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
                 ],
@@ -4228,7 +4228,7 @@ export const RESTAURANTS_DATA = {
       },
     ],
   },
-  "2": {
+  "6a3d839dc18c0e3ce3a51fd1": {
     name: "CORDEIRO ESPETARIA E CHOPPERIA",
     status: "Aberto", // TODO: TUDO DINAMICO CARALHO
     waitTime: "Entrega X mins",
@@ -4285,7 +4285,7 @@ export const RESTAURANTS_DATA = {
             details: [
               {
                 title: "Quer faca e garfo?",
-                required: true,
+                required: false,
                 options: [
                   { name: "Sim, por favor"},
                   { name: "Não, obrigado"},
@@ -4317,7 +4317,7 @@ export const RESTAURANTS_DATA = {
             details: [
               {
                 title: "Texto",
-                required: true,
+                required: false,
                 options: [
                   { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
                   { name: "Texto opção", price: "XX,XX" },
@@ -4335,7 +4335,7 @@ export const RESTAURANTS_DATA = {
               },
               {
                 title: "Texto",
-                required: true,
+                required: false,
                 options: [
                   { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
                 ],
@@ -5011,7 +5011,7 @@ export const RESTAURANTS_DATA = {
       },
     ],
   },
-  "3": {
+  "6a3d839dc18c0e3ce3a51fd2": {
     name: "MIYABI COMIDA JAPONESA",
     status: "Aberto", // TODO: TUDO DINAMICO CARALHO
     waitTime: "Entrega X mins",
@@ -5646,7 +5646,7 @@ export const RESTAURANTS_DATA = {
             details: [
               {
                 title: "Texto",
-                required: true,
+                required: false,
                 options: [
                   { name: "Texto opção", subtext: "SUBEXCLUÍDO", price: "XX,XX" },
                   { name: "Texto opção", price: "XX,XX" },
@@ -5664,7 +5664,7 @@ export const RESTAURANTS_DATA = {
               },
               {
                 title: "Texto",
-                required: true,
+                required: false,
                 options: [
                   { name: "Texto opção", subtext: "subtexto", price: "XX,XX" },
                 ],
@@ -5794,7 +5794,7 @@ export const RESTAURANTS_DATA = {
       },
     ],
   },
-  "4": {
+  "6a3d839dc18c0e3ce3a51fd3": {
     name: "SEM CÂO HAMBURGUERIA E CREPERIA",
     status: "Aberto", // TODO: TUDO DINAMICO CARALHO
     waitTime: "Entrega X mins",
@@ -6577,7 +6577,7 @@ export const RESTAURANTS_DATA = {
       },
     ],
   },
-  "5": {
+  "6a3d839dc18c0e3ce3a51fd4": {
     name: "ALINE AÇAÍ, SOBREMESAS E MARMITAS FIT",
     status: "Aberto", // TODO: TUDO DINAMICO CARALHO
     waitTime: "Entrega X mins",
