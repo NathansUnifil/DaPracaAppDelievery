@@ -109,6 +109,7 @@ dist
 
 # Serverless directories
 .serverless/
+backend/db.js
 
 # FuseBox cache
 .fusebox/
